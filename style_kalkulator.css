@@ -38,6 +38,16 @@ button {
 	font-size: 2.5rem;
 	font-family: "Roboto", sans-serif;
 	cursor: pointer;
+	border: none;
+	border-radius: 15px;
+}
+button {
+	transition: all 0.5s;
+}
+button:hover {
+	background-color: #303a52;
+	color: white;
+	/* background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%); */
 }
 
 .text {
