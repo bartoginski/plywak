@@ -12,65 +12,25 @@ const sumaSzescianow = document.querySelector("#suma-szescianow");
 const szescianRoznicy = document.querySelector("#szescian-roznicy");
 const roznicaSzescianow = document.querySelector("#roznica-szescianow");
 
-let div = document.querySelector(".wynik");
+let wynik = document.querySelector(".wynik");
 
 function returnResult() {
+	const a = parseFloat(inputA.value);
+	const b = parseFloat(inputB.value);
+
 	if (kwadratSumy.checked) {
-		// a * a + 2 * a * b + b * b
-		div.innerHTML =
-			inputA.value * inputA.value +
-			2 * inputA.value * inputA.value +
-			inputA.value * inputA.value;
+		wynik.innerHTML = a ** 2 + 2 * a * b + b ** 2;
 	} else if (kwadratRoznicy.checked) {
-		//a * a - 2 * a * b + b * b
-		div.innerHTML =
-			inputA.value * inputA.value -
-			2 * inputA.value * inputB.value +
-			inputB.value * inputB.value;
+		wynik.innerHTML = a ** 2 - 2 * a * b + b ** 2;
 	} else if (roznicaKwadratow.checked) {
-		// console.log(inputA.value - inputB.value);
-		// console.log(Number(inputA.value) + Number(inputB.value));
-		div.innerHTML =
-			(inputA.value - inputB.value) *
-			(Number(inputA.value) + Number(inputB.value));
+		wynik.innerHTML = (a - b) * (a + b);
 	} else if (szescianSumy.checked) {
-		div.innerHTML =
-			Number(inputA.value) * Number(inputA.value) * Number(inputA.value) +
-			3 *
-				Number(inputA.value) *
-				Number(inputA.value) *
-				Number(inputB.value) +
-			(3 *
-				Number(inputA.value) *
-				Number(inputB.value) *
-				Number(inputB.value) +
-				Number(inputB.value) *
-					Number(inputB.value) *
-					Number(inputB.value));
+		wynik.innerHTML = a ** 3 + 3 * a ** 2 * b + 3 * a * b ** 3;
 	} else if (sumaSzescianow.checked) {
-		div.innerHTML =
-			Number(inputA.value) +
-			Number(inputB.value) *
-				(Number(inputA.value) * Number(inputA.value) -
-					Number(inputA.value) * Number(inputB.value) +
-					Number(inputB.value) * Number(inputB.value));
+		wynik.innerHTML = (a + b) * (a ** 2 - a * b + b ** 2);
 	} else if (szescianRoznicy.checked) {
-		div.innerHTML =
-			Number(inputA.value) * Number(inputA.value) * Number(inputA.value) -
-			3 *
-				Number(inputA.value) *
-				Number(inputA.value) *
-				Number(inputB.value) +
-			3 *
-				Number(inputA.value) *
-				Number(inputB.value) *
-				Number(inputB.value) -
-			Number(inputB.value) * Number(inputB.value) * Number(inputB.value);
+		wynik.innerHTML = a ** 3 - 3 * a ** 2 * b + 3 * a * b ** 2 - b ** 3;
 	} else if (roznicaSzescianow.checked) {
-		div.innerHTML =
-			(Number(inputA.value) - Number(inputB.value)) *
-			(Number(inputA.value) * Number(inputA.value) +
-				Number(inputA.value) * Number(inputB.value) +
-				Number(inputB.value) * Number(inputA.value));
+		wynik.innerHTML = (a - b) * (a ** 2 + a * b + b ** 2);
 	}
 }
