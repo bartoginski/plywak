@@ -37,6 +37,7 @@ input,
 button {
 	font-size: 2.5rem;
 	font-family: "Roboto", sans-serif;
+	cursor: pointer;
 }
 
 .text {
