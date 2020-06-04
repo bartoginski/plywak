@@ -17,20 +17,25 @@ let wynik = document.querySelector(".wynik");
 function returnResult() {
 	const a = parseFloat(inputA.value);
 	const b = parseFloat(inputB.value);
-
+	let result = 0;
 	if (kwadratSumy.checked) {
-		wynik.innerHTML = a ** 2 + 2 * a * b + b ** 2;
+		result += a ** 2 + 2 * a * b + b ** 2;
 	} else if (kwadratRoznicy.checked) {
-		wynik.innerHTML = a ** 2 - 2 * a * b + b ** 2;
+		result += a ** 2 - 2 * a * b + b ** 2;
 	} else if (roznicaKwadratow.checked) {
-		wynik.innerHTML = (a - b) * (a + b);
+		result += (a - b) * (a + b);
 	} else if (szescianSumy.checked) {
-		wynik.innerHTML = a ** 3 + 3 * a ** 2 * b + 3 * a * b ** 3;
+		result += a ** 3 + 3 * a ** 2 * b + 3 * a * b ** 3;
 	} else if (sumaSzescianow.checked) {
-		wynik.innerHTML = (a + b) * (a ** 2 - a * b + b ** 2);
+		result += (a + b) * (a ** 2 - a * b + b ** 2);
 	} else if (szescianRoznicy.checked) {
-		wynik.innerHTML = a ** 3 - 3 * a ** 2 * b + 3 * a * b ** 2 - b ** 3;
+		result += a ** 3 - 3 * a ** 2 * b + 3 * a * b ** 2 - b ** 3;
 	} else if (roznicaSzescianow.checked) {
-		wynik.innerHTML = (a - b) * (a ** 2 + a * b + b ** 2);
+		result += (a - b) * (a ** 2 + a * b + b ** 2);
 	}
+	return display(result);
+}
+
+function display(a) {
+	wynik.innerHTML = `Wynik: ${a}`;
 }
