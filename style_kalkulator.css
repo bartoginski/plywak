@@ -58,7 +58,7 @@ button:hover {
     font-size: 3rem;
 }
 
-@media (max-width: 70000px) {
+@media (max-width: 700px) {
     h2 {
         text-align: center;
     }
