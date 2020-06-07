@@ -1,97 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Kalkulator</title>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./style_kalkulator.css" />
-	</head>
-	<body>
-		<h2>Pływakowy kalkulator</h2>
-		<div class="input">
-			<input type="text" placeholder="Podaj a" class="text podaj-a" />
-			<input type="text" placeholder="Podaj b" class="text podaj-b" />
-			<button class="oblicz" onclick="returnResult()">Oblicz</button>
-		</div>
-		<div class="options">
-			<ul>
-				<li>
-					<label for="kwadrat-sumy">
-						<input
-							type="radio"
-							name="opcje"
-							id="kwadrat-sumy"
-							checked
-						/>(a + b)<sup>2</sup>
-					</label>
-				</li>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kalkulator</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style_kalkulator.css" />
+        <link rel="icon" href="icons/iconmonstr-calculator-2-240.png" />
+    </head>
+    <body>
+        <h2>Pływakowy kalkulator</h2>
+        <div class="input">
+            <input type="text" placeholder="Podaj a" class="text podaj-a" />
+            <input type="text" placeholder="Podaj b" class="text podaj-b" />
+            <button class="oblicz" onclick="returnResult()">Oblicz</button>
+        </div>
+        <div class="options">
+            <ul>
+                <li>
+                    <label for="kwadrat-sumy">
+                        <input
+                            type="radio"
+                            name="opcje"
+                            id="kwadrat-sumy"
+                            checked
+                        />(a + b)<sup>2</sup>
+                    </label>
+                </li>
 
-				<li>
-					<label for="kwadrat-roznicy">
-						<input
-							type="radio"
-							name="opcje"
-							id="kwadrat-roznicy"
-						/>(a - b)<sup>2</sup>
-					</label>
-				</li>
+                <li>
+                    <label for="kwadrat-roznicy">
+                        <input
+                            type="radio"
+                            name="opcje"
+                            id="kwadrat-roznicy"
+                        />(a - b)<sup>2</sup>
+                    </label>
+                </li>
 
-				<li>
-					<label for="roznica-kwadratow">
-						<input
-							type="radio"
-							name="opcje"
-							id="roznica-kwadratow"
-						/>a<sup>2</sup> - b<sup>2</sup>
-					</label>
-				</li>
+                <li>
+                    <label for="roznica-kwadratow">
+                        <input
+                            type="radio"
+                            name="opcje"
+                            id="roznica-kwadratow"
+                        />a<sup>2</sup> - b<sup>2</sup>
+                    </label>
+                </li>
 
-				<li>
-					<label for="szescian-sumy">
-						<input type="radio" name="opcje" id="szescian-sumy" />(a
-						+ b)<sup>3</sup>
-					</label>
-				</li>
+                <li>
+                    <label for="szescian-sumy">
+                        <input type="radio" name="opcje" id="szescian-sumy" />(a
+                        + b)<sup>3</sup>
+                    </label>
+                </li>
 
-				<li>
-					<label for="suma-szescianow">
-						<input
-							type="radio"
-							name="opcje"
-							id="suma-szescianow"
-						/>a<sup>3</sup> + b<sup>3</sup>
-					</label>
-				</li>
+                <li>
+                    <label for="suma-szescianow">
+                        <input
+                            type="radio"
+                            name="opcje"
+                            id="suma-szescianow"
+                        />a<sup>3</sup> + b<sup>3</sup>
+                    </label>
+                </li>
 
-				<li>
-					<label for="szescian-roznicy">
-						<input
-							type="radio"
-							name="opcje"
-							id="szescian-roznicy"
-						/>(a - b)<sup>3</sup>
-					</label>
-				</li>
+                <li>
+                    <label for="szescian-roznicy">
+                        <input
+                            type="radio"
+                            name="opcje"
+                            id="szescian-roznicy"
+                        />(a - b)<sup>3</sup>
+                    </label>
+                </li>
 
-				<li>
-					<label for="roznica-szescianow">
-						<input
-							type="radio"
-							name="opcje"
-							id="roznica-szescianow"
-						/>a<sup>3</sup> + b<sup>3</sup>
-					</label>
-				</li>
-			</ul>
-		</div>
-		<h1 class="wynik">Wynik:</h1>
-		<h3 class="dzialanie"></h3>
-		<h3 class="dzialanie2"></h3>
-
-		<script src="./app_kalkulator.js"></script>
-	</body>
+                <li>
+                    <label for="roznica-szescianow">
+                        <input
+                            type="radio"
+                            name="opcje"
+                            id="roznica-szescianow"
+                        />a<sup>3</sup> + b<sup>3</sup>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <h1 class="wynik">Wynik:</h1>
+        <h3 class="dzialanie"></h3>
+        <h3 class="dzialanie2"></h3>
+        <footer>Calc by Ogi🔥</footer>
+        <script src="./app_kalkulator.js"></script>
+    </body>
 </html>

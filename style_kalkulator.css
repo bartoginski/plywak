@@ -16,7 +16,9 @@ body {
     font-family: "Roboto", sans-serif;
     color: white;
 }
-
+footer {
+    font-size: 2rem;
+}
 h2 {
     font-size: 4rem;
 }
