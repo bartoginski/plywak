@@ -1,3 +1,4 @@
-kalkulator dla plywaka
+# This project is little joke. 
+This calculator should help my classmate.
 
-Kalkulator powstal w celu poprawienia oceny plywaka z matematyki
+
